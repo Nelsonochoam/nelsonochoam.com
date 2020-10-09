@@ -54,12 +54,15 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
-  --color-text: #2e353f;
+  --color-primary: #7ca5cf;
+  --color-text: white;
   --color-text-light: #4f5969;
-  --color-heading: #1a202c;
   --color-heading-black: black;
+  --color-heading: #90d3c3;
   --color-accent: #d1dce5;
+
+  --color-links: #90d3c3;
+  --color-background-dark: #282d35;
 }
 
 /* HTML elements */
@@ -81,6 +84,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: var(--color-background-dark);
 }
 
 footer {
@@ -120,7 +124,7 @@ h6 {
 h1 {
   font-weight: var(--fontWeight-black);
   font-size: var(--fontSize-6);
-  color: var(--color-heading-black);
+  color: var(--color-heading);
 }
 
 h2 {
@@ -197,12 +201,20 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-light);
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
   font-size: var(--fontSize-2);
+  font-style: italic;
+  margin-bottom: var(--spacing-8);
+}
+
+q {
+  margin-right: var(--spacing-2);
+  padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
+  border-left: var(--spacing-1) solid var(--color-primary);
+  font-size: var(--fontSize-0);
   font-style: italic;
   margin-bottom: var(--spacing-8);
 }
@@ -230,7 +242,7 @@ table thead tr th {
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--color-links);
 }
 
 a:hover,
@@ -270,7 +282,7 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
-  color: var(--color-primary);
+  color: var(--color-heading);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }

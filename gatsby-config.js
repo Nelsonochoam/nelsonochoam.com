@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Techtrail`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Nelson Ochoa`,
+      summary: `You drown not by falling into the river, but by staying submerged in it.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `- A blog by Nelson Ochoa`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `nelsonochoam`,
     },
   },
   plugins: [
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Techtrail`,
+        short_name: `Techtrail`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
