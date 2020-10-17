@@ -6,7 +6,7 @@ description: "Hello world and welcome to this amazing blog"
 
 > **HELLO WORLD!!**, _(I guess that is the first thing you write if you are a software developer)_, and welcome to my blog.
 
-I have been writting software for the last 6 years (2020) professionally, but actually I also studied something called Systems Engineering back home (Venezuela) where I used to live before moving to Canada ... and I wrote tons of bad code at school, but anyways... After all this years I decided I wanted to try out writting about this whole journey I have had (and maybe some unrelated stuff) and the hard lessons that I have learned, with the hopes that it can help someone out there and also to help me keep getting better.
+I have been writting software for the last 6 years (2020) professionally, but actually I also studied something called Systems Engineering back home (Venezuela) where I used to live before moving to Canada ... and I used to write tons of bad code at school, but anyways... After all these years I decided I wanted to try out writting about this whole journey I have had _(and maybe some unrelated stuff)_ and the hard lessons that I have learned, with the hopes that it can help someone out there and also to help me keep getting better.
 
 Just to be clear
 
@@ -16,6 +16,8 @@ Just to be clear
 
 > What in the world is Dhandho
 
-It is a _Gujarati_ word that translates into _"endeavours that create wealth"_. In a investing book I really liked called _The Dhandho Investor by Mohnish Pabrai_ he coins refers to the concept of Dhandho as an approach to business (and life) that seeks to minimize risk while maximizing returns and in other books from other authors I like like _Nassim Nicholas Taleb_ they call it _Fundamental Asymmetries_ or _Asymmetric Opportunities_.
+In a investing book I really liked called _The Dhandho Investor by Mohnish Pabrai_ he refers to the concept of Dhandho as an approach to business (and life) that seeks to minimize risk while maximizing returns and in other books from other authors I like like _Nassim Nicholas Taleb_ they call it _Fundamental Asymmetries_ or _Asymmetric Opportunities_. This word litteraly translates to english from the _Gujarati_ language to "endeavours that generate wealth" (if you are curious)
 
-I know I know... I am such a geek but I think is really something that represents me and the way I see life by trying to put myself in positions where risk is low and payoffs are great... but more on that later...
+I know I know... I am such a geek, but I think it is really something that represents me and the way I live life by trying to put myself in positions where risk is low and payoffs are great... but more on that later...
+
+Thanks for being here and reading my blog, it means a wolrd to me :)
