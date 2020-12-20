@@ -361,3 +361,15 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+/*****
+* Markdown asides
+*****/
+
+aside {
+  padding: 20px;
+  font-weight: bold;
+  background-color: var(--color-text-light);
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
