@@ -2,6 +2,7 @@
 title: Welcome
 date: "2020-10-16T22:12:03.284Z"
 description: "Hello world and welcome to this amazing blog"
+tags: ["Random"]
 ---
 
 > **HELLO WORLD!!**, _(I guess that is the first thing you write if you are a software developer)_, and welcome to my blog.
