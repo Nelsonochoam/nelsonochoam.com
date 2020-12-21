@@ -8,13 +8,13 @@ tags: ["Roadmap"]
 Starting something new can be really hard specially when __you don't know what you don't know__.
 Based on what I know from working day in and out writing code for years, I wanted to put
 together something that might give some guidance to new developers in terms of what they
-should focus on to achieve the goal most of them want which is to get their first job.
+should focus on.
 
 So here is my take on how I would start learning and why I believe this is the order in which you
 should pursue knowledge.
 
 
-#### Understand what are you getting into
+#### Understand what you are getting into
 
 > Goal: Understand that programming is not as hard as solving complex math problems with
 derivatives and integrals, but not as simple as building a _Wix_ website
@@ -23,7 +23,7 @@ derivatives and integrals, but not as simple as building a _Wix_ website
 
 <aside>
 Yes, there can be some really complex things but you don't need them to get started. With time
-you will learn them, once you have been programming for while.
+you will learn them.
 </aside>
 
 
@@ -39,13 +39,14 @@ understand how to actually do stuff with a programming language.
   doesn't matter if you use python or java or c#, or go)
 </aside>
 
-Once you learn those concepts, you should be able to understand and write something like this
+Once you learn those concepts, you should be able to understand and write something like the code below
 which is very procedural, but will demonstrate you know how to use the basic features that 
 almost every single programming language support.
 
 ```javascript
 // Imperative procedural code. This might be how your 
 // code might look like at this point
+
 function fizzBuzz(value) {
   if (value % 3 === 0) {
     console.log('fizz')
@@ -58,23 +59,19 @@ function fizzBuzz(value) {
 
 allValues = [1,2,3,4,5,6,8,9,10]
 
-// There are better ways of doing all this but this is totally
-// ok when you are starting out and don't know any better
 for (var i =0; i <= allValues.length; i = i + 1) {
   fizzBuzz(allValues[i])
 }
-
 ```
 
 #### Structuring your code
 
-> Goal: Structure your code by files; cleaner code that is easier
-to reason about; learn that where you place variables matters
+> Goal: Structure your code by files; learn that where you place variables matter.
 
 ![Code structure](./structure.png)
 
 Once you understand those concepts, you should be able to answer why `counterOne`
-below keeps incrementing and `counterTwo` never increases
+in the code below keeps incrementing and `counterTwo` never increases.
 
 ```javascript
 
@@ -113,7 +110,7 @@ countTwo() // output: 2
 ![Data Structures](./data.png)
 
 <aside>
-It is ok if you don't know all of them to perfection, but knowing they exist and what each one is useful for is important. The ones you will use the most at work are arrays, maps and lists most likely
+It is ok if you don't know all of them to perfection, but knowing they exist and what each one is useful for is important.
 </aside>
 
 If you were tasked with something like 
