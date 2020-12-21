@@ -1,5 +1,5 @@
 ---
-title: Roadmap to Software</br> Development (Part 1)
+title: Roadmap to becoming a</br> Software Developer (Part 1)
 date: "2020-12-20T22:12:03.284Z"
 description: "What should you learn if you want to become a software developer"
 tags: ["Roadmap"]
