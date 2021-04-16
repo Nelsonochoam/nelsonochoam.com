@@ -1,6 +1,6 @@
 ---
 title: Using the type system to your advantage
-date: "2021-15-07T22:12:03.284Z"
+date: "2021-04-15T22:12:03.284Z"
 description: "Using your compiler and type system to become a better developer"
 tags: ["Types"]
 ---
