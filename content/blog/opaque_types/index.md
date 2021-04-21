@@ -2,7 +2,7 @@
 title: Using the type system to your advantage
 date: "2021-04-15T22:12:03.284Z"
 description: "Using your compiler and type system to become a better developer"
-tags: ["Types"]
+tags: ["Types", "Typescript"]
 ---
 
 Lately I have been learning a bit more about functional programming and playing around with languages like Haskell and Elm. I am by no means an expert but there are a few cool things I have learned from using their type system and compiler.
@@ -87,5 +87,3 @@ fetch(url)
 The great benefit of all this is that I am forced to parse my input if I want to call my function, which ultimately will enforce your program correctness by telling you not to forget to validate your data and call your methods with the correct information.
 
 There is a great article related to this topic (not necessarily opaque types) that I recommend you go and check out [Parse dont validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/).
-
-

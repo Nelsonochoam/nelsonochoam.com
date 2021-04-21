@@ -4,29 +4,40 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Tags, Tag } from "../components/tags"
+import Image from "gatsby-image"
 
-import styled from 'styled-components'
+import { Tags } from "../components/tags"
+
+import styled from "styled-components"
 
 const TagsContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+
+  .frontmatter-tags {
+    margin-top: 10px;
+    font-weight: bold;
+  }
 `
 
 const BlogIndex = ({ data, location }) => {
   const [selectedTag, setSelectedTag] = useState()
+  const welcome = data?.welcome?.childImageSharp?.fluid
 
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const tags = data.allMarkdownRemark.nodes
-    .flatMap((post) => post.frontmatter.tags).filter((tag) => !!tag)
+    .flatMap(post => post.frontmatter.tags)
+    .filter(tag => !!tag)
 
   const posts = () => {
     if (!selectedTag) return data.allMarkdownRemark.nodes
-    const matches_tag = (tag) => tag === selectedTag
-    return data.allMarkdownRemark.nodes.filter((post) => post.frontmatter.tags.some(matches_tag))
+    const matches_tag = tag => tag === selectedTag
+    return data.allMarkdownRemark.nodes.filter(post =>
+      post.frontmatter.tags.some(matches_tag)
+    )
   }
 
-  const filterByTag = (tag) => {
+  const filterByTag = tag => {
     if (tag === selectedTag) {
       setSelectedTag(undefined)
     } else {
@@ -48,6 +59,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title={`Posts | ${siteTitle}`} />
       <Bio />
+
+      <Image fluid={welcome} alt={"welcome"} />
 
       <div className="posts-section">
         <Tags tags={tags} onSelectTag={filterByTag} selectedTag={selectedTag} />
@@ -84,7 +97,9 @@ const BlogIndex = ({ data, location }) => {
                       />
                     </section>
                     <TagsContainer>
-                      { post.frontmatter.tags.map((tag) => <Tag>{tag}</Tag>) }
+                      <div className="frontmatter-tags">
+                        {post.frontmatter.tags.join(", ")}
+                      </div>
                     </TagsContainer>
                   </article>
                 </Link>
@@ -104,6 +119,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    welcome: file(absolutePath: { regex: "/welcome.png/" }) {
+      childImageSharp {
+        fluid(maxWidth: 730, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
