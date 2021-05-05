@@ -3,7 +3,7 @@ module.exports = {
     title: `Dhandho`,
     author: {
       name: `Nelson Ochoa`,
-      summary: `You drown not by falling into the river, but by staying submerged in it.`,
+      summary: `We are what we repeatedly do. Excellence then, is not an act, but a habit. - Aristotle`,
     },
     description: `- A blog by Nelson Ochoa`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -30,6 +30,16 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              ratio: 1.77,
+              height: 400,
+              related: false,
+              noIframeBorder: true,
+            },
+          },
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
