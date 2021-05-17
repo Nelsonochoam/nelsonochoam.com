@@ -11,7 +11,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: "100%";
-  --maxWidth-wrapper: var(--maxWidth-3xl);
+  --maxWidth-wrapper: var(--maxWidth-4xl);
   --spacing-px: "1px";
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -30,8 +30,8 @@
   --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: Roboto, "Georgia", Cambria, "Times New Roman",
-    Times, serif;
+  --fontFamily-serif: Roboto, "Georgia", Cambria, "Times New Roman", Times,
+    serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -65,6 +65,12 @@
 
   --post-shadow: rgba(26, 26, 27, 0.635) 0px 2px 15px 0px;
   --post-color: rgb(54, 60, 72);
+
+  /* Code snippets */
+  /* https://docs.deckdeckgo.com/?path=/docs/components-highlight-code--highlight-code */
+  --deckgo-highlight-code-carbon-box-shadow: none;
+  --deckgo-highlight-code-carbon-toolbar-display: none;
+  --deckgo-highlight-code-container-width: 800px;
 }
 
 /* HTML elements */

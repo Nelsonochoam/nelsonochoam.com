@@ -41,10 +41,12 @@ module.exports = {
             },
           },
           {
+            // Maybe replace with https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/
             resolve: `gatsby-remark-highlight-code`,
             options: {
               terminal: "carbon",
-              theme: "monokai",
+              theme: "material",
+              lineNumbers: true,
             },
           },
           {
