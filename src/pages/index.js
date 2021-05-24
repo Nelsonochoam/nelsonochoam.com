@@ -22,7 +22,6 @@ const TagsContainer = styled.div`
 
 const BlogIndex = ({ data, location }) => {
   const [selectedTag, setSelectedTag] = useState()
-  const welcome = data?.welcome?.childImageSharp?.fluid
 
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const tags = data.allMarkdownRemark.nodes
@@ -59,8 +58,6 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title={`Posts | ${siteTitle}`} />
       <Bio />
-
-      <Image fluid={welcome} alt={"welcome"} />
 
       <div className="posts-section">
         <Tags tags={tags} onSelectTag={filterByTag} selectedTag={selectedTag} />
@@ -119,13 +116,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    welcome: file(absolutePath: { regex: "/welcome.png/" }) {
-      childImageSharp {
-        fluid(maxWidth: 730, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
