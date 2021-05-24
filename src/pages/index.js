@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "gatsby-image"
 
 import { Tags } from "../components/tags"
 
@@ -47,7 +46,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts().length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title={`Posts | ${siteTitle}`} />
+        <SEO title={'Posts'} />
         <Bio />
         <p>No blog posts found.</p>
       </Layout>
@@ -56,7 +55,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title={`Posts | ${siteTitle}`} />
+      <SEO title={'Posts'} />
       <Bio />
 
       <div className="posts-section">
