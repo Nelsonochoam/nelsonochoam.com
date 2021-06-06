@@ -6,7 +6,7 @@ tags: ["Testing"]
 ---
 
 <div style="display: flex; justify-content: center;">
-  <img src="./computer_bug.svg"  style="width:300px;"/>
+  <img src="./computer_bug.svg"  style="width:300px; max-height: 345px;"/>
 </div>
 
 <br/>
