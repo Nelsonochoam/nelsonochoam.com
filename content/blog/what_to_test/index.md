@@ -5,9 +5,11 @@ description: Have you ever felt sick when you hear the word test?
 tags: ["Testing"]
 ---
 
-<div style="display: flex; justify-content: center; padding: 40px;">
+<div style="display: flex; justify-content: center;">
   <img src="./computer_bug.svg"  style="width:300px;"/>
 </div>
+
+<br/>
 
 > Either you test your code, or your users will. Take your pick
 
