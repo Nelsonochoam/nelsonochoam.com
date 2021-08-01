@@ -28,7 +28,7 @@ As soon as we create a branch and add our first commit, we start diverging away 
 
 - You might end up with some weird branches that do not represent what your actual product can do. Have you ever had those situations where you had to build something in one night just to make a sale? (that pesky demo branch).
 
-- No, you are not doing Continuous Integration if you aren't able to integrate code into your product continually. The goal of CI is working so that our changes are always visible to at least our teammates. If you are really doing CI there should only be one significant version of you code.
+- No, you are not doing Continuous Integration if you aren't able to integrate code into your product continually. The goal of CI is working so that our changes are always visible to at least our teammates. If you are really doing CI there should only be one significant version of your code.
 
 ---
 
