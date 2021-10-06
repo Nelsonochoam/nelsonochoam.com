@@ -1,11 +1,11 @@
 {
-  "name": "dhandho",
+  "name": "nelsonochoam",
   "private": true,
   "description": "A blog by Nelson Ochoa",
   "version": "0.1.0",
   "author": "Nelson Ochoa <nelsonochoam@gmail.com>",
   "bugs": {
-    "url": "https://github.com/Nelsonochoam/dhandho.io/issues"
+    "url": "https://github.com/Nelsonochoam/nelsonochoam.com/issues"
   },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^2.2.2",
